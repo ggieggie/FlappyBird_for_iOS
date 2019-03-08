@@ -11,6 +11,7 @@ class ViewController: UIViewController {
         // SKViewに型を変換する
         //let skView = self.view as! SKView
         
+        // SKViewをgameSceneに合わせる
         if let skView = view as? SKView {
             gameScene?.scaleMode = .aspectFill
             skView.presentScene(gameScene)
